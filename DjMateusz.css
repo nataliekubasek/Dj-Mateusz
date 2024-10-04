@@ -1,0 +1,2259 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body, td, th {
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+    font-size: 100%;
+    color: #FFFFFF;
+}
+
+a:link {
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+    color: rgba(255,255,255,1);
+}
+a:hover {
+    text-decoration: underline;
+    color: rgba(223,15,179,1);
+}
+a:active {
+    text-decoration: none;
+    color: rgba(223,15,179,1);
+}
+
+body {
+    background-color: rgba(206,206,206,1.00);
+    overflow-x: hidden; /* Prevent horizontal scroll on the body */
+}
+
+header {
+    position: fixed; /* Fixed position to stick at the top */
+    top: 5px;;
+    left: 200px;
+    width: 260px;
+    height: 210px;
+    padding: 10px;
+    background-color: rgba(23,55,85,1);
+    z-index: 200;
+}
+
+header img {
+    position: absolute;
+    width: 300px; 
+    height: auto;
+    padding-right: 10px;
+    left: -15px;
+}
+
+menu {
+    position: fixed;
+    width: 1320px;
+    height: 160px;
+    top: -20px;
+    left: 50%;
+	border: solid;
+	border-color: rgba(0,0,0,1.00);
+	border-width: 5px;
+	border-bottom: none; 
+	~webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-size: 110%;
+    word-spacing: 40px;
+	text-align: right;
+    z-index: 100;
+    background-color: rgba(23,55,85,1);
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgba(255,255,255,1.00);
+    padding-right: 40px;
+    /* Add margin to move the menu text */
+}
+
+menu span a {
+    display: inline-block; /* Ensure the <a> tags are displayed as blocks */
+    margin-top: 110px;
+}
+
+menu .nav:nth-child(8) a {
+    background-color: rgba(97, 192, 234, 1); 
+	border-radius: 5px;
+	width: 80px;
+	height: 30px;
+	text-align: center;
+}
+
+#container {
+    margin: 140px auto 0; /* Adjusted margin */
+    width: 1400px; /* Adjusted width */
+    height: 2500px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+	border: solid;
+	border-color: black;
+	border-width: 5px;
+	background-color: rgba(255,255,255,1.00);
+}
+
+.class-for-index {
+
+div.scroll-container {
+    margin-top: -250px; /* Adjusted margin */
+    white-space: nowrap;
+    overflow-x: auto; /* Enable horizontal scrolling */
+	width: 1410px;
+	background-color: rgba(23, 55, 85, 1);
+}
+
+
+@keyframes scroll {
+    0% { transform: translateX(0); } /* Start at initial position */
+    100% { transform: translateX(-100%); } /* Move to the left by 100% */
+}
+
+div.scroll-container img {
+    height: 800px;
+    width: auto;
+    opacity: 75%;
+    animation: scroll;
+    animation-duration: 30s; 
+    animation-iteration-count: linear infinite;
+}
+
+
+.presenting {
+	width: 1400px;
+    background-color: rgba(23, 55, 85, 1);
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 20px;
+    font-size: 160%;
+    display: block; /* Ensure the div spans the full width */
+}
+
+.name1 {
+    position: absolute;
+    width: 100%;
+    top: 630px;
+    display: block;
+    font-family: "Passion One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 400%;
+    text-align: center;
+    color: transparent;
+    background-color: rgba(23, 55, 85, 1);
+    -webkit-text-stroke-width: 2px; /* Set the border width */
+    -webkit-text-stroke-color: rgba(73, 154, 211, 1); /* Set the border color */
+    text-stroke-width: 2px; /* Set the border width for browsers that support it */
+    text-stroke-color: rgba(73, 154, 211, 1); /* Set the border color for browsers that support it */
+	transition: 0.5s;
+	z-index: 10;
+}
+
+.name1:hover {
+	color: rgba(176, 68, 120, 1);
+	 -webkit-text-stroke-width: 0px;
+	 text-stroke-width: 0px;
+}
+
+.name2 {
+	position: absolute;
+    width: 100%;
+    top: 670px;
+    display: block;
+    font-family: "Passion One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 300%;
+    text-align: center;
+    color: transparent;
+    background-color: rgba(23, 55, 85, 1);
+    -webkit-text-stroke-width: 2px; /* Set the border width */
+    -webkit-text-stroke-color: rgba(176, 68, 120, 1); /* Set the border color */
+    text-stroke-width: 2px; /* Set the border width for browsers that support it */
+    text-stroke-color: rgba(176, 68, 120, 1); /* Set the border color for browsers that support it */
+	transition: 0.5s;
+	padding-bottom: 40px;
+	z-index:1;
+}
+
+.name2:hover {
+	color: rgba(73, 154, 211, 1);
+	 -webkit-text-stroke-width: 0px;
+	 text-stroke-width: 0px;
+}
+
+
+.info h3 {
+	font-size: 160%;
+}
+
+.info {
+    position: absolute;
+    width: 1400px; /* Adjusted width to accommodate padding */
+    top: 790px;
+    background-color: rgba(255,255,255,1.00);
+    color: rgba(23, 55, 85, 1);
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+	font-size: 110%
+    font-style: normal;
+	padding-right: 110px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+
+.expect {
+	   position: absolute;
+	background-color: rgba(23, 55, 85, 1);
+	color: white;
+	top: 1000px;
+	width: 1410px;
+	font-size: 140%;
+	 font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+	text-align: center;
+	padding-bottom: 30px;
+
+}
+
+.expect img{
+	height: 600px;
+	width: auto;
+	border-radius: 10px;
+}
+
+.young {
+	position: absolute;
+	top: 1240px;
+	left: 60px;
+	color: white;
+	 font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+	text-align: center;
+	font-size: 90%;
+}
+
+.young h4 {
+	position: absolute;
+	top: -60px;
+	left: 40px;
+	font-size: 140%;
+	font-weight: 500;
+	
+}
+
+.young img{
+	position: absolute;
+	top: -150px;
+	left: 50px;
+	width: 100px;
+	height: 100px;
+	transition: 0.5s;
+}
+
+.young img:hover{
+~webkit-transform: scale(120%);
+	transform: scale(120%);
+}
+
+.quality {
+    position: absolute;
+    top: 1580px; /* Adjusted top position */
+    left: 65px;
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    font-size: 90%;
+}
+
+.quality h4 {
+	position: absolute;
+	top: -90px;
+	left: -2px;
+	font-size: 140%;
+	font-weight: 500;
+	
+}
+
+.quality img{
+	position: absolute;
+	top: -200px;
+	left: 15px;
+	width: 150px;
+	height: 150px;
+	transition: 0.5s;
+}
+
+.quality img:hover{
+~webkit-transform: scale(120%);
+	transform: scale(120%);
+}
+
+.professional {
+	position: absolute;
+	top: 1240px;
+	right: 60px;
+	color: white;
+	 font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+	text-align: center;
+	font-size: 90%;
+}
+
+.professional h4 {
+	position: absolute;
+	top: -60px;
+	right: 5px;
+	font-size: 140%;
+	font-weight: 500;
+	
+}
+
+.professional img{
+	position: absolute;
+	top: -165px;
+	right: 30px;
+	width: 125px;
+	height: 125px;
+	transition: 0.5s;
+}
+
+.professional img:hover{
+~webkit-transform: scale(120%);
+	transform: scale(120%);
+}
+
+
+.personalize {
+	position: absolute;
+	top: 1580px;
+	right: 50px;
+	color: white;
+	 font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+	text-align: center;
+	font-size: 90%;
+}
+
+.personalize h4 {
+	position: absolute;
+	top: -90px;
+	right: 5px;
+	font-size: 140%;
+	font-weight: 500;
+	
+}
+
+.personalize img{
+	position: absolute;
+	top: -195px;
+	right: 30px;
+	width: 140px;
+	height: 140px;
+	transition: 0.5s;
+}
+
+.personalize img:hover{
+~webkit-transform: scale(120%);
+	transform: scale(120%);
+}
+
+.follow {
+	position: absolute;
+	background-color: rgba(97, 192, 234, 1);
+	color: white;
+	top: 1730px;
+	width: 1410px;
+	height: 650px;
+	font-size: 100%;
+	 font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+	text-align: center;
+}
+
+.follow h4 {
+font-size: 140%; 
+font-weight: 500;
+
+}
+
+.follow a {
+	position: absolute;
+	top: 105px;
+	left: 180px;
+}
+
+#instagram1{
+	position: absolute;
+	top: 100px;
+	left: 120px;
+	width: 40px;
+	height: 40px;
+}
+
+#pic1, #pic2, #pic3 {
+	width: auto;
+	height: 300px;
+	padding: 10px;
+	border-radius:15px;
+}
+
+#pic1 {
+	position: absolute;
+	top: 160px;
+	left: 170px;
+}
+
+#pic2 {
+	position: absolute;
+	top: 160px;
+	left: 590px;
+}
+
+#pic3 {
+	position: absolute;
+	top: 160px;
+	left: 930px;
+}
+
+#instagram2, #facebook, #tiktok {
+	width: 40px;
+	height: 40px;
+}
+
+#instagram2 {
+	position: absolute;
+	top: 415px;
+	left: 460px;
+	transition:0.1s;
+}
+
+#instagram2:hover {
+	opacity: 60%;
+}
+
+#facebook {
+	position: absolute;
+	top: 415px;
+	left: 540px;
+	transition:0.1s;
+
+}
+
+#facebook:hover {
+	opacity: 60%;
+}
+
+#facebook:hover {
+	opacity: 60%;
+}
+
+#tiktok {
+	position: absolute;
+	top: 415px;
+	left: 625px;
+	
+}
+
+}
+
+
+
+.class-for-about {
+	
+	#container {
+		height: 1750px;
+	}
+	
+	.title {
+	background-color: rgba(255,255,255,1.00);
+	color: rgba(23, 55, 85, 1);
+	font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 20px;
+    font-size: 200%;
+	position: absolute;
+	left: 70px;
+	top: 100px;	
+}
+
+.subtitle {
+	background-color: rgba(255,255,255,1.00);
+	color: rgba(23, 55, 85, 1);
+	font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+	position: absolute;
+	left: 140px;
+	top: 200px;	
+}
+
+.top {
+	position: absolute;
+	right:0px;
+	top: 250px;
+	background-color: rgba(23, 55, 85, 1);
+	height: 400px;
+	width: 1280px;
+	border-radius: 15px;
+	border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+}
+
+#matthew {
+	position: absolute;
+	height: 400px;
+	width: auto;
+	top:0px;
+	left: 0px;
+	border-radius: 10px;
+}
+
+#djboard {
+	position: absolute;
+	height: 300px;
+	width: auto;
+	top:50px;
+	right: 0px;
+}
+
+.story {
+	position: absolute;
+	top: 700px;
+	left: 200px;
+	font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+	color: rgba(23, 55, 85, 1);
+	text-align: justify;
+	font-size: 110%;
+	padding-right: 80px;
+	
+}
+	
+	.story h4 {
+		background-color: rgba(255,255,255,1.00);
+	color: rgba(23, 55, 85, 1);
+	font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+	position: absolute;
+	left:-60px;
+	top: 360px;	
+		
+	}
+	
+	.philosophy {
+		position: absolute;
+		background-color: rgba(23, 55, 85, 1);
+		top: 1150px;
+		width: 100%;
+		height: 425px;
+		text-transform: uppercase;
+		font-family: "Kanit", sans-serif;
+   		 font-weight: 400;
+   		 font-style: normal;
+		color: rgba(255,255,255,1.00);
+			font-size: 110%;
+		padding-top: 50px;
+		padding-left: 100px;
+		padding-right: 100px;
+		text-align: justify;
+		overflow: hidden;
+	}
+	
+	#djboard2 {
+		position: absolute;
+		bottom: -25px;
+		width:800px;
+		height: auto;
+		right: 480px;
+	
+	}
+	
+	menu .nav:nth-child(1) a {
+    color: rgba(223,15,179,1);
+}
+
+}
+
+.class-for-events {
+	
+	#container {
+		height: 2000px;
+	}
+	
+		.title {
+	background-color: rgba(255,255,255,1.00);
+	color: rgba(23, 55, 85, 1);
+	font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 20px;
+    font-size: 200%;
+	position: absolute;
+	left: 70px;
+	top: 100px;	
+}
+
+	.weddings {
+		background-color: rgba(23, 55, 85, 1);
+		width: 1400px;
+		height: 300px;
+		position: absolute;
+		color: rgba(254,254,254,1.00);
+		font-family: "Kanit", sans-serif;
+  		font-weight: 300;
+    	font-style: normal;
+		top: 200px;	
+		text-align: left;
+		right: 0px;
+
+	}
+	
+	.weddings p{
+		position: absolute;
+		right: 150px;
+		top: 100px;
+	}
+	.weddings h4 {
+		 font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+		position: absolute;
+	right: 740px;
+		top: 30px;
+	}
+	
+	.weddings img {
+		position: absolute;
+		height:300px; 
+		width: auto;
+		top: 0px;
+		border-radius: 10px;
+		border-top-left-radius: 0;
+   	 	border-bottom-left-radius: 0;
+		left:0px;
+	}
+	
+	.communions {
+		background-color: rgba(23, 55, 85, 1);
+		width: 1400px;
+		height: 300px;
+		position: absolute;
+		color: rgba(254,254,254,1.00);
+		font-family: "Kanit", sans-serif;
+  		font-weight: 300;
+    	font-style: normal;
+		top: 350px;	
+		text-align: left;
+		right: 0px;
+
+	}
+	
+	.communions p{
+		position: absolute;
+		left: 120px;
+		top: 120px;
+	}
+	.communions h4 {
+		 font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+		position: absolute;
+	left: 120px;
+		top: 50px;
+	}
+	
+	.communions img {
+		position: absolute;
+		height:300px; 
+		width: auto;
+		top: 0px;
+		border-radius: 10px;
+		border-top-right-radius: 0;
+   	 	border-bottom-right-radius: 0;
+		left:950px;
+	}
+	
+	.birthdays {
+		background-color: rgba(23, 55, 85, 1);
+		width: 1400px;
+		height: 300px;
+		position: absolute;
+		color: rgba(254,254,254,1.00);
+		font-family: "Kanit", sans-serif;
+  		font-weight: 300;
+    	font-style: normal;
+		top: 700px;	
+		text-align: left;
+		right: 0px;
+
+	}
+	
+	.birthdays p {
+		position: absolute;
+		right: 140px;
+		top: 110px;
+	}
+	.birthdays h4 {
+		 font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+		position: absolute;
+	right: 740px;
+		top: 40px;
+	}
+	
+	.birthdays img {
+		position: absolute;
+		height:300px; 
+		width: auto;
+		top: 0px;
+		border-radius: 10px;
+		border-top-left-radius: 0;
+   	 	border-bottom-left-radius: 0;
+		left:0px;
+	}
+	
+	.graduations {
+		background-color: rgba(23, 55, 85, 1);
+		width: 1400px;
+		height: 300px;
+		position: absolute;
+		color: rgba(254,254,254,1.00);
+		font-family: "Kanit", sans-serif;
+  		font-weight: 300;
+    	font-style: normal;
+		top: 1050px;	
+		text-align: left;
+		right: 0px;
+
+	}
+	
+	.graduations p{
+		position: absolute;
+		left: 120px;
+		top: 120px;
+	}
+	.graduations h4 {
+		 font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+		position: absolute;
+	left: 120px;
+		top: 50px;
+	}
+	
+	.graduations img {
+		position: absolute;
+		height:300px; 
+		width: auto;
+		top: 0px;
+		border-radius: 10px;
+		border-top-right-radius: 0;
+   	 	border-bottom-right-radius: 0;
+		left:950px;
+	}
+	
+	.anniversaries {
+		background-color: rgba(23, 55, 85, 1);
+		width: 1400px;
+		height: 300px;
+		position: absolute;
+		color: rgba(254,254,254,1.00);
+		font-family: "Kanit", sans-serif;
+  		font-weight: 300;
+    	font-style: normal;
+		top: 1400px;	
+		text-align: left;
+		right: 0px;
+
+	}
+	
+	.anniversaries p {
+		position: absolute;
+		right: 180px;
+		top: 110px;
+	}
+	.anniversaries h4 {
+		 font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+		position: absolute;
+	right: 680px;
+		top: 40px;
+	}
+	
+	.anniversaries img {
+		position: absolute;
+		height:300px; 
+		width: auto;
+		top: 0px;
+		border-radius: 10px;
+		border-top-left-radius: 0;
+   	 	border-bottom-left-radius: 0;
+		left:0px;
+	}
+	
+	menu .nav:nth-child(2) a {
+    color: rgba(223,15,179,1);
+}
+	footer {
+		bottom: -1500px;
+	}
+	
+}
+
+.class-for-reviews {
+	#container {
+		height: 1950px;
+	}
+	
+	.title {
+	background-color: rgba(255,255,255,1.00);
+	color: rgba(23, 55, 85, 1);
+	font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 20px;
+    font-size: 200%;
+	position: absolute;
+	left: 70px;
+	top: 100px;	
+}
+
+.subtitle {
+	background-color: rgba(255,255,255,1.00);
+	color: rgba(23, 55, 85, 1);
+	font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+	position: absolute;
+	left: 140px;
+	top: 200px;	
+}
+	
+		form {
+	position: absolute; 
+    background-color: rgba(23, 55, 85, 1);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #888888;
+    margin: 50px auto;
+    max-width: 800px;
+    width: 800px;
+		top: 200px;
+		left: 280px;
+    padding: 30px;
+}
+
+form label {
+	 font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(255,255,255,1.00);
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+form input[type="text"], form input[type="email"], form input[type="date"] {
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px #cccccc;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 95%;
+}
+		
+input[type="button"] {
+    background-color: rgba(97, 192, 234, 1);
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 100%;
+	 font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+input[type="button"]:hover {
+    background-color: rgba(60,127,157,1.00);
+}
+	
+.star-rating {
+  display: inline-block;
+}
+	.star-rating h4 {
+		position: absolute;
+		 font-family: "Kanit", sans-serif;
+    font-weight: 400;
+		font-size: 85%;
+    font-style: normal;
+		top: 360px;
+	}
+
+.star-rating input[type="radio"] {
+  display: none;
+}
+
+.star-rating label {
+  display: inline-block; /* Change to inline-block */
+  cursor: pointer;
+  font-size: 30px;
+  color: rgba(255,255,255,1.00); /* Outline color */
+}
+
+.star-rating label:before {
+  content: "\2605"; /* Star character */
+}
+
+.star-rating input[type="radio"]:checked ~ label {
+  color: rgba(255, 192, 107, 1); /* Filled color */
+}
+	
+	.others {
+	color: rgba(23, 55, 85, 1);
+	font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+	position: absolute;
+	left: 140px;
+	top: 900px;	
+		
+	}
+	
+	.review1 {
+		position: absolute;
+		left: 280px;
+		top: 1000px;
+		border: solid;
+		border-width: 1px;
+		border-radius: 5px;
+		border-color: rgba(97, 192, 234, 1);
+		width: 800px;
+		height: 200px;
+	}
+		
+		.review1 h4 {
+			font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 110%;
+	position: absolute;
+			color: rgba(23, 55, 85, 1);
+			left: 30px;
+		}
+	
+	.review1 h2 {
+			font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 100%;
+	position: absolute;
+			color: rgba(23, 55, 85, 1);
+			left: 30px;
+		top: 45px;
+	}
+	
+	.review1 img {
+		position: absolute;
+		width: 140px;
+		height: auto;
+		top:93px;
+		left:30px;
+	}
+	
+	.review1 p {
+			font-family: "Kanit", sans-serif;
+    font-weight: 250;
+    font-style: normal;
+    font-size: 90%;
+		color: rgba(23, 55, 85, 1);
+	position: absolute;
+	left: 30px;
+		top:120px;
+	}
+	
+	.review2 {
+		position: absolute;
+		left: 280px;
+		top: 1240px;
+		border: solid;
+		border-width: 1px;
+		border-radius: 5px;
+		border-color: rgba(97, 192, 234, 1);
+		width: 800px;
+		height: 200px;
+	}
+		
+		.review2 h4 {
+			font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 110%;
+	position: absolute;
+			color: rgba(23, 55, 85, 1);
+			left: 30px;
+		}
+	
+	.review2 h2 {
+			font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 100%;
+	position: absolute;
+			color: rgba(23, 55, 85, 1);
+			left: 30px;
+		top: 45px;
+	}
+	
+	.review2 img {
+		position: absolute;
+		width: 140px;
+		height: auto;
+		top:93px;
+		left:30px;
+	}
+	
+	.review2 p {
+			font-family: "Kanit", sans-serif;
+    font-weight: 250;
+    font-style: normal;
+    font-size: 90%;
+		color: rgba(23, 55, 85, 1);
+	position: absolute;
+	left: 30px;
+		top:120px;
+	}
+	
+		.review3 {
+		position: absolute;
+		left: 280px;
+		top: 1480px;
+		border: solid;
+		border-width: 1px;
+		border-radius: 5px;
+		border-color: rgba(97, 192, 234, 1);
+		width: 800px;
+		height: 200px;
+	}
+		
+		.review3 h4 {
+			font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 110%;
+	position: absolute;
+			color: rgba(23, 55, 85, 1);
+			left: 30px;
+		}
+	
+	.review3 h2 {
+			font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 100%;
+	position: absolute;
+			color: rgba(23, 55, 85, 1);
+			left: 30px;
+		top: 45px;
+	}
+	
+	.review3 img {
+		position: absolute;
+		width: 140px;
+		height: auto;
+		top:93px;
+		left:30px;
+	}
+	
+	.review3 p {
+			font-family: "Kanit", sans-serif;
+    font-weight: 250;
+    font-style: normal;
+    font-size: 90%;
+		color: rgba(23, 55, 85, 1);
+	position: absolute;
+	left: 30px;
+		top:120px;
+	}
+
+	menu .nav:nth-child(6) a {
+    color: rgba(223,15,179,1);
+}
+}
+
+.class-for-book {
+	
+	#container {
+		height: 1350px;
+	}
+	
+	.title {
+	background-color: rgba(255,255,255,1.00);
+	color: rgba(23, 55, 85, 1);
+	font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 20px;
+    font-size: 200%;
+	position: absolute;
+	left: 70px;
+	top: 100px;	
+}
+	
+	form {
+	position: absolute; 
+    background-color: rgba(23, 55, 85, 1);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #888888;
+    margin: 50px auto;
+    max-width: 800px;
+    width: 800px;
+		top: 150px;
+		left: 280px;
+    padding: 30px;
+}
+
+form label {
+	 font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(255,255,255,1.00);
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+form input[type="text"], form input[type="email"], form input[type="number"], form input[type="date"], form input[type="time"], form input[type="location"], form input[type="number"] {
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px #cccccc;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 95%;
+}
+	
+/* Style for the label */
+select#event {
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px #cccccc;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 90%;
+}
+	
+input[type="button"] {
+    background-color: rgba(97, 192, 234, 1);
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 100%;
+	 font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+input[type="button"]:hover {
+    background-color: rgba(60,127,157,1.00);
+}
+
+}
+
+.class-for-contact {
+		#container {
+		height: 1200px;
+	}
+	.title {
+	background-color: rgba(255,255,255,1.00);
+	color: rgba(23, 55, 85, 1);
+	font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 20px;
+    font-size: 200%;
+	position: absolute;
+	left: 70px;
+	top: 100px;	
+}
+	
+	.subtitle1 h4 {
+	background-color: rgba(255,255,255,1.00);
+	color: rgba(23, 55, 85, 1);
+	font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+	position: absolute;
+	left: 280px;
+	top: 170px;	
+}
+	
+	.subtitle1 p {
+	color: rgba(23, 55, 85, 1);
+	font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 120%;
+	position: absolute;
+	left: 280px;
+	top: 240px;	
+	
+}
+	
+		.subtitle2 h4 {
+	background-color: rgba(255,255,255,1.00);
+	color: rgba(23, 55, 85, 1);
+	font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+	position: absolute;
+	left: 640px;
+	top: 170px;	
+}
+	
+	.subtitle2 p {
+	color: rgba(23, 55, 85, 1);
+	font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 120%;
+	position: absolute;
+	left: 640px;
+	top: 240px;	
+	
+}
+	
+	form {
+	position: absolute; 
+    background-color: rgba(23, 55, 85, 1);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #888888;
+    margin: 50px auto;
+    max-width: 800px;
+    width: 800px;
+		top: 360px;
+		left: 280px;
+    padding: 30px;
+}
+	form h4{
+	color: rgba(23, 55, 85, 1);
+	font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+	position: absolute;
+	left: 0px;
+	top: -80px;	
+	}
+
+form label {
+	 font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(255,255,255,1.00);
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+form input[type="text"], form input[type="email"] {
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px #cccccc;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 95%;
+}
+	
+input[type="button"] {
+    background-color: rgba(97, 192, 234, 1);
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 100%;
+	 font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+input[type="button"]:hover {
+    background-color: rgba(60,127,157,1.00);
+}
+	
+	menu .nav:nth-child(7) a {
+    color: rgba(223,15,179,1);
+}	
+	
+}
+
+.class-for-pricing {
+	#container {
+		height: 1700px;
+	}
+	
+	.title {
+	background-color: rgba(255,255,255,1.00);
+	color: rgba(23, 55, 85, 1);
+	font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 20px;
+    font-size: 200%;
+	position: absolute;
+	left: 70px;
+	top: 100px;	
+	}
+		.package {
+			background-color: rgba(23, 55, 85, 1);
+			position: absolute;
+			top:200px;
+			width: 100%;
+			height: 200px;
+		}
+	
+	.package h4 {
+	color: rgba(255,255,255,1.00);
+	font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+	position: absolute;
+	top: 5px;
+		left: 60px;
+	}
+	
+	.package p {
+		font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 110%;
+	position: absolute;
+		color: rgba(255,253,253,1.00);
+		top: 65px;
+		left: 60px;
+	}
+	
+	.cost h4 {
+		position: absolute;
+		left: 140px;
+		top: 400px;
+		font-family: "Kanit", sans-serif;
+  	  	font-weight: 400;
+    	font-style: normal;
+    	font-size: 140%;
+		color: rgba(23, 55, 85, 1);
+	}
+	
+	.cost p {
+		position: absolute;
+		left: 140px;
+		top: 460px;
+		font-family: "Kanit", sans-serif;
+    	font-weight: 300;
+    	font-style: normal;
+    	font-size: 110%;
+		color: rgba(23, 55, 85, 1);
+
+	}
+	
+	.table img{
+		position: absolute;
+		top: 550px;
+		left:350px;
+		width: 700px;
+		height: auto;
+	}
+	
+	.weddings h4 {
+		position: absolute;
+		left: 460px;
+		top: 570px;
+		font-family: "Kanit", sans-serif;
+  	  	font-weight: 400;
+    	font-style: normal;
+    	font-size: 140%;
+		background-color: rgba(255,255,255,1.00);
+		color: rgba(23, 55, 85, 1);	
+	}
+	
+	.weddings p {
+		position: absolute;
+		right: 420px;
+		top: 570px;
+		font-family: "Kanit", sans-serif;
+    	font-weight: 300;
+    	font-style: normal;
+    	font-size: 110%;
+		color: rgba(23, 55, 85, 1);
+		background-color: rgba(255,255,255,1.00);
+		text-align: center;
+	}
+	
+	.communions h4 {
+		position: absolute;
+		left: 450px;
+		top: 695px;
+		font-family: "Kanit", sans-serif;
+  	  	font-weight: 400;
+    	font-style: normal;
+    	font-size: 140%;
+		background-color: rgba(255,255,255,1.00);
+		color: rgba(23, 55, 85, 1);	
+	}
+	
+	.communions p {
+		position: absolute;
+		right: 405px;
+		top: 685px;
+		font-family: "Kanit", sans-serif;
+    	font-weight: 300;
+    	font-style: normal;
+    	font-size: 110%;
+		color: rgba(23, 55, 85, 1);
+		background-color: rgba(255,255,255,1.00);
+		text-align: center;
+	}
+	
+	.birthdays h4 {
+		position: absolute;
+		left: 460px;
+		top: 820px;
+		font-family: "Kanit", sans-serif;
+  	  	font-weight: 400;
+    	font-style: normal;
+    	font-size: 140%;
+		background-color: rgba(255,255,255,1.00);
+		color: rgba(23, 55, 85, 1);	
+	}
+	
+	.birthdays p {
+		position: absolute;
+		right: 425px;
+		top: 825px;
+		font-family: "Kanit", sans-serif;
+    	font-weight: 300;
+    	font-style: normal;
+    	font-size: 110%;
+		color: rgba(23, 55, 85, 1);
+		background-color: rgba(255,255,255,1.00);
+		text-align: center;
+	}
+	
+		.graduations h4 {
+		position: absolute;
+		left: 445px;
+		top: 945px;
+		font-family: "Kanit", sans-serif;
+  	  	font-weight: 400;
+    	font-style: normal;
+    	font-size: 140%;
+		background-color: rgba(255,255,255,1.00);
+		color: rgba(23, 55, 85, 1);	
+	}
+	
+	.graduations p {
+		position: absolute;
+		right: 420px;
+		top: 950px;
+		font-family: "Kanit", sans-serif;
+    	font-weight: 300;
+    	font-style: normal;
+    	font-size: 110%;
+		color: rgba(23, 55, 85, 1);
+		background-color: rgba(255,255,255,1.00);
+		text-align: center;
+	}
+	
+		.anniversaries h4 {
+		position: absolute;
+		left: 440px;
+		top: 1075px;
+		font-family: "Kanit", sans-serif;
+  	  	font-weight: 400;
+    	font-style: normal;
+    	font-size: 140%;
+		background-color: rgba(255,255,255,1.00);
+		color: rgba(23, 55, 85, 1);	
+	}
+	
+	.anniversaries p {
+		position: absolute;
+		right: 395px;
+		top: 1070px;
+		font-family: "Kanit", sans-serif;
+    	font-weight: 300;
+    	font-style: normal;
+    	font-size: 110%;
+		color: rgba(23, 55, 85, 1);
+		background-color: rgba(255,255,255,1.00);
+		text-align: center;
+	}
+	
+	.addons h4 {
+		position: absolute;
+		top: 1200px;
+		left:140px;
+		color: rgba(23, 55, 85, 1);
+			font-family: "Kanit", sans-serif;
+  	  	font-weight: 400;
+    	font-style: normal;
+    	font-size: 140%;
+	}
+	
+	.addons p {
+			font-family: "Kanit", sans-serif;
+    	font-weight: 300;
+    	font-style: normal;
+    	font-size: 110%;
+		color: rgba(23, 55, 85, 1);
+		position: absolute;
+		top: 1260px;
+		left:140px;
+	}
+	
+	.bolded {
+		font-weight: 400;
+
+	}
+	
+		menu .nav:nth-child(3) a {
+    color: rgba(223,15,179,1);
+}
+	
+}
+
+.class-for-april {
+	#container {
+		height: 1860px;
+	}
+		.title {
+	background-color: rgba(255,255,255,1.00);
+	color: rgba(23, 55, 85, 1);
+	font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 20px;
+    font-size: 200%;
+	position: absolute;
+	left: 70px;
+	top: 100px;	
+	}
+	
+	.subtitle {
+	background-color: rgba(255,255,255,1.00);
+	color: rgba(23, 55, 85, 1);
+	font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+	position: absolute;
+	left: 140px;
+	top: 200px;	
+	}
+	
+	.month {
+	color: rgba(23, 55, 85, 1);
+	font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+	position: absolute;
+	left: 650px;
+	top: 270px;	
+	}
+	
+	.calendar img {
+		position: absolute;
+		top: 330px;
+		left: 150px;
+		width: 1100px;
+		height: auto;
+		
+}
+
+	.arrow1 img {
+		position: absolute;
+		top:280px;
+		right: 480px;
+		width: 20px;
+		height: auto;
+	}
+	
+	.arrow1 h4 {
+		position: absolute;
+		top:267px;
+		right: 375px;
+		color: rgba(23, 55, 85, 1);
+		font-family: "Kanit", sans-serif;
+    	font-weight: 200;
+   		font-style: normal;
+    	font-size: 70%;
+	}
+	
+	
+	.arrow2 img {
+		position: absolute;
+		top:280px;
+		right: 190px;
+		width: 20px;
+		height: auto;
+	}
+	
+		.arrow2 h4 {
+		position: absolute;
+		top:267px;
+		right: 230px;
+		color: rgba(23, 55, 85, 1);
+		font-family: "Kanit", sans-serif;
+    	font-weight: 200;
+   		font-style: normal;
+    	font-size: 70%;
+	}
+	
+	.subtitle2 {
+	color: rgba(23, 55, 85, 1);
+	font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+	position: absolute;
+	left: 140px;
+	top: 1100px;	
+	}
+	
+	.dates {
+	font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+	color: rgba(23, 55, 85, 1);
+	font-size: 110%;
+	position: absolute;
+	top: 1150px;
+	left: 150px;
+	}
+	
+	.dates .pink {
+		color: rgba(176, 68, 120, 1);
+	}
+	
+	.dates .blue {
+		color: rgba(73, 154, 211, 1);
+	}
+	
+	.open {
+		width: 100%;
+		height: 400px;
+		position: absolute;
+		top:1330px;
+		background-color: rgba(23, 55, 85, 1);
+	}
+	
+	.open h4 {
+	font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+	color: rgba(255,255,255,1.00);
+	position: absolute;
+	left: 140px;
+	top: 10px;	
+	}
+	
+	.open h3 {
+	font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+	color: rgba(255,255,255,1.00);
+	position: absolute;
+	left: 320px;
+	top: 70px;	
+	}
+	
+		.open h2 {
+	font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+	color: rgba(255,255,255,1.00);
+	position: absolute;
+	left: 700px;
+	top: 70px;	
+	}
+	
+		.open h1 {
+	font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+	color: rgba(255,255,255,1.00);
+	position: absolute;
+	left: 1100px;
+	top: 70px;	
+	}
+	
+	.days p1 {
+		font-family: "Kanit", sans-serif;
+   		font-weight: 300;
+    	font-style: normal;
+    	font-size: 110%;
+		color: rgba(255,255,255,1.00);
+		position: absolute;
+		left: 320px;
+		top: 1470px;
+		text-align: center;
+	}
+	
+	.days p2 {
+		font-family: "Kanit", sans-serif;
+   		font-weight: 300;
+    	font-style: normal;
+    	font-size: 110%;
+		color: rgba(255,255,255,1.00);
+		position: absolute;
+		left: 700px;
+		top: 1470px;
+		text-align: center;
+	}
+	
+		.days p3 {
+		font-family: "Kanit", sans-serif;
+   		font-weight: 300;
+    	font-style: normal;
+    	font-size: 110%;
+		color: rgba(255,255,255,1.00);
+		position: absolute;
+		left: 1110px;
+		top: 1470px;
+		text-align: center;
+	}
+	
+		menu .nav:nth-child(4) a {
+    color: rgba(223,15,179,1);
+}
+	
+}
+
+.class-for-may {
+	#container {
+		height: 1860px;
+	}
+	
+		.title {
+	background-color: rgba(255,255,255,1.00);
+	color: rgba(23, 55, 85, 1);
+	font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 20px;
+    font-size: 200%;
+	position: absolute;
+	left: 70px;
+	top: 100px;	
+	}
+	
+	.subtitle {
+	background-color: rgba(255,255,255,1.00);
+	color: rgba(23, 55, 85, 1);
+	font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+	position: absolute;
+	left: 140px;
+	top: 200px;	
+	}
+	
+	.month {
+	color: rgba(23, 55, 85, 1);
+	font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+	position: absolute;
+	left: 650px;
+	top: 270px;	
+	}
+	
+	.calendar img {
+		position: absolute;
+		top: 330px;
+		left: 150px;
+		width: 1100px;
+		height: auto;
+		
+}
+
+	.arrow1 img {
+		position: absolute;
+		top:280px;
+		right: 480px;
+		width: 20px;
+		height: auto;
+	}
+	
+	.arrow1 h4 {
+		position: absolute;
+		top:267px;
+		right: 375px;
+		color: rgba(23, 55, 85, 1);
+		font-family: "Kanit", sans-serif;
+    	font-weight: 200;
+   		font-style: normal;
+    	font-size: 70%;
+	}
+	
+	
+	.arrow2 img {
+		position: absolute;
+		top:280px;
+		right: 190px;
+		width: 20px;
+		height: auto;
+	}
+	
+		.arrow2 h4 {
+		position: absolute;
+		top:267px;
+		right: 230px;
+		color: rgba(23, 55, 85, 1);
+		font-family: "Kanit", sans-serif;
+    	font-weight: 200;
+   		font-style: normal;
+    	font-size: 70%;
+	}
+	
+	.subtitle2 {
+	color: rgba(23, 55, 85, 1);
+	font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+	position: absolute;
+	left: 140px;
+	top: 1100px;	
+	}
+	
+	.dates {
+	font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+	color: rgba(23, 55, 85, 1);
+	font-size: 110%;
+	position: absolute;
+	top: 1150px;
+	left: 150px;
+	}
+	
+	.dates .pink {
+		color: rgba(176, 68, 120, 1);
+	}
+	
+	.dates .blue {
+		color: rgba(73, 154, 211, 1);
+	}
+	
+	.open {
+		width: 100%;
+		height: 400px;
+		position: absolute;
+		top:1330px;
+		background-color: rgba(23, 55, 85, 1);
+	}
+	
+	.open h4 {
+	font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+	color: rgba(255,255,255,1.00);
+	position: absolute;
+	left: 140px;
+	top: 10px;	
+	}
+	
+	.open h3 {
+	font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+	color: rgba(255,255,255,1.00);
+	position: absolute;
+	left: 320px;
+	top: 70px;	
+	}
+	
+		.open h2 {
+	font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+	color: rgba(255,255,255,1.00);
+	position: absolute;
+	left: 700px;
+	top: 70px;	
+	}
+	
+		.open h1 {
+	font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+	color: rgba(255,255,255,1.00);
+	position: absolute;
+	left: 1100px;
+	top: 70px;	
+	}
+	
+	.days p1 {
+		font-family: "Kanit", sans-serif;
+   		font-weight: 300;
+    	font-style: normal;
+    	font-size: 110%;
+		color: rgba(255,255,255,1.00);
+		position: absolute;
+		left: 320px;
+		top: 1470px;
+		text-align: center;
+	}
+	
+	.days p2 {
+		font-family: "Kanit", sans-serif;
+   		font-weight: 300;
+    	font-style: normal;
+    	font-size: 110%;
+		color: rgba(255,255,255,1.00);
+		position: absolute;
+		left: 700px;
+		top: 1470px;
+		text-align: center;
+	}
+	
+		.days p3 {
+		font-family: "Kanit", sans-serif;
+   		font-weight: 300;
+    	font-style: normal;
+    	font-size: 110%;
+		color: rgba(255,255,255,1.00);
+		position: absolute;
+		left: 1110px;
+		top: 1470px;
+		text-align: center;
+	}
+	
+		menu .nav:nth-child(4) a {
+    color: rgba(223,15,179,1);
+}
+	
+}
+
+.class-for-gallery {
+	#container {
+		height: 1900px;
+	}
+	
+		.title {
+	background-color: rgba(255,255,255,1.00);
+	color: rgba(23, 55, 85, 1);
+	font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 20px;
+    font-size: 200%;
+	position: absolute;
+	left: 70px;
+	top: 100px;	
+	}
+	
+	.subtitle {
+	background-color: rgba(255,255,255,1.00);
+	color: rgba(23, 55, 85, 1);
+	font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+	position: absolute;
+	left: 140px;
+	top: 200px;	
+	}
+	
+	.gallery1 img {
+		position: absolute;
+		top: 250px;
+		left: 170px;
+		border-radius: 10px;
+		width: 300px;
+		height: auto;
+		transition:0.5s;
+	}
+	
+	.gallery1 img:hover {
+		border: solid;
+		border-width: 5px;
+		border-color: rgba(23, 55, 85, 1); 
+	}
+	
+	.gallery2 img {
+		position: absolute;
+		top: 250px;
+		left: 550px;
+		border-radius: 10px;
+		width: 300px;
+		height: auto;
+		transition: 0.5s;
+	}
+	
+	.gallery2 img:hover {
+		border: solid;
+		border-width: 5px;
+		border-color: rgba(23, 55, 85, 1); 
+	}
+	
+	.gallery3 img {
+		position: absolute;
+		top: 250px;
+		left: 930px;
+		border-radius: 10px;
+		width: 300px;
+		height: auto;
+		transition: 0.5s;
+	}
+	
+	.gallery3 img:hover {
+		border: solid;
+		border-width: 5px;
+		border-color: rgba(23, 55, 85, 1); 
+	}
+	
+	.gallery4 img {
+		position: absolute;
+		top: 520px;
+		left: 170px;
+		border-radius: 10px;
+		width: 300px;
+		height: auto;
+		transition: 0.5s;
+	}
+	
+	.gallery4 img:hover {
+		border: solid;
+		border-width: 5px;
+		border-color: rgba(23, 55, 85, 1); 
+	}
+	
+	.gallery5 img {
+		position: absolute;
+		top: 530px;
+		left: 550px;
+		border-radius: 10px;
+		width: 300px;
+		height: auto;
+		transition: 0.5s;
+	}
+	
+	.gallery5 img:hover {
+		border: solid;
+		border-width: 5px;
+		border-color: rgba(23, 55, 85, 1); 
+	}
+	
+	.gallery6 img {
+		position: absolute;
+		top: 520px;
+		left: 930px;
+		border-radius: 10px;
+		width: 300px;
+		height: auto;
+		transition: 0.5s;
+	}
+	
+	.gallery6 img:hover {
+		border: solid;
+		border-width: 5px;
+		border-color: rgba(23, 55, 85, 1); 
+	}
+	
+	.subtitle2 {
+	background-color: rgba(255,255,255,1.00);
+	color: rgba(23, 55, 85, 1);
+	font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+	position: absolute;
+	left: 140px;
+	top: 850px;	
+	}
+	
+	.vid1 img {
+		position: absolute;
+		top: 900px;
+		left: 170px;
+		border-radius: 10px;
+		width: auto;
+		height: 350px;
+		transition:0.5s;
+	}
+	
+	.vid1 img:hover {
+		border: solid;
+		border-width: 5px;
+		border-color: rgba(23, 55, 85, 1); 
+	}
+	
+	.vid2 img {
+		position: absolute;
+		top: 900px;
+		left: 450px;
+		border-radius: 10px;
+		width: auto;
+		height: 350px;
+		transition:0.5s;
+	}
+	
+	.vid2 img:hover {
+		border: solid;
+		border-width: 5px;
+		border-color: rgba(23, 55, 85, 1); 
+	}
+	
+	.vid3 img {
+		position: absolute;
+		top: 900px;
+		left: 720px;
+		border-radius: 10px;
+		width: auto;
+		height: 350px;
+		transition:0.5s;
+	}
+	
+	.vid3 img:hover {
+		border: solid;
+		border-width: 5px;
+		border-color: rgba(23, 55, 85, 1); 
+	}
+	
+		.vid4 img {
+		position: absolute;
+		top: 900px;
+		left: 990px;
+		border-radius: 10px;
+		width: auto;
+		height: 350px;
+		transition:0.5s;
+	}
+	
+	.vid4 img:hover {
+		border: solid;
+		border-width: 5px;
+		border-color: rgba(23, 55, 85, 1); 
+	}
+	
+		.vid5 img {
+		position: absolute;
+		top: 1300px;
+		left: 170px;
+		border-radius: 10px;
+		width: auto;
+		height: 350px;
+		transition:0.5s;
+	}
+	
+	.vid5 img:hover {
+		border: solid;
+		border-width: 5px;
+		border-color: rgba(23, 55, 85, 1); 
+	}
+	
+		.vid6 img {
+		position: absolute;
+		top: 1300px;
+		left: 450px;
+		border-radius: 10px;
+		width: auto;
+		height: 350px;
+		transition:0.5s;
+	}
+	
+	.vid6 img:hover {
+		border: solid;
+		border-width: 5px;
+		border-color: rgba(23, 55, 85, 1); 
+	}
+	
+			menu .nav:nth-child(5) a {
+    color: rgba(223,15,179,1);
+}
+	
+	
+}
+
+
+
+
+
+
+	
+
+
+footer {
+	position:absolute;
+	background-color: rgba(23, 55, 85, 1);
+    bottom:0px;
+    width: 1350px; 
+	height: 50px;
+    padding-left: 50px;
+	padding-top: 30px;
+    font-size: 90%;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+	 font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+	
+}
